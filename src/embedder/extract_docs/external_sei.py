@@ -205,11 +205,14 @@ def download_pdf(id_documento: str) -> str:
 
         soap_body = f"""
         <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
-           <soapenv:Header/>
-           <soapenv:Body>
-              <Chave>{SEI_IAWS_KEY}</Chave>
-              <IdDocumento>{id_documento}</IdDocumento>
-           </soapenv:Body>
+            <soapenv:Header/>
+            <soapenv:Body>
+                <parametros>
+                    <IdentificacaoServico>{SEI_IAWS_KEY}</IdentificacaoServico>
+                    <IdDocumento>{id_documento}</IdDocumento>
+                    <SiglaSistema>Usuario_IA</SiglaSistema>
+                </parametros>
+            </soapenv:Body>
         </soapenv:Envelope>
         """
 
