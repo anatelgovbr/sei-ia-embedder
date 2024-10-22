@@ -1,5 +1,8 @@
 # Embedder Project
 
+Projeto usado para a criacao de embeddings para RAG e similaridade de documentos.
+
+
 ## Instalação
 
 Libs necessarias do SO
