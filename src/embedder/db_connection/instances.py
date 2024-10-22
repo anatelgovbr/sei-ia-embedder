@@ -35,7 +35,7 @@ if DATABASE_TYPE == "oracle":
     oracledb.version = "8.3.0"
     oracledb.init_oracle_client()
     sys.modules["cx_Oracle"] = oracledb
-    CONN_SEI_STRING = f"oracle://{DB_SEI_USER}:{DB_SEI_PWD}@{DB_SEI_HOST}:{DB_SEI_PORT}/?sid=xe&mode=SYSDBA"
+    CONN_SEI_STRING = f"oracle://{DB_SEI_USER}:{DB_SEI_PWD}@{DB_SEI_HOST}:{DB_SEI_PORT}/?sid=xe"
     sql="SELECT * FROM SEI.ASSUNTO"
     sei_db_instance = DBConnector(CONN_SEI_STRING, schema="")
 
