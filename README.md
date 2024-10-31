@@ -1,28 +1,8 @@
-# Embedder Project
-
-Projeto usado para a criacao de embeddings para RAG e similaridade de documentos.
-
-
-## Instalação
-
-Libs necessarias do SO
-* GCC
-* G++
-* cmake
-* poppler
-
-```pip install .[dev]```
-
-### Docker run
-Dockerfiles estão na pasta ./dockerfiles
-
-```bash
-docker buildx build --load --build-arg GIT_TOKEN=${GIT_TOKEN} --network host -t assistente-${DATABASE_TYPE} -f ${DATABASE_TYPE}.dockerfile .
-docker run --network docker-host-bridge --env-file ${DATABASE_TYPE}.env -d -p 8010:8080 -t assistente-${DATABASE_TYPE} bash
-```
+# Projeto de Embedder do Servidor de Soluções de IA do Módulo SEI-IA
+Esse projeto não tem funcionalidade alguma sem o [Servidor de Soluções de IA do Módulo SEI IA](https://github.com/anatelgovbr/sei-ia).
 
 ## Descrição
-Este projeto é um sistema de extração, processamento e criação de embeddings para documentos do SEI (Sistema Eletrônico de Informações).
+Este projeto é um sistema de extração, processamento e criação de embeddings para documentos do SEI (Sistema Eletrônico de Informações). Ele é usado pelo Airflow do servidor de Soluções de IA do Módulo SEI-IA.
 
 ## Estrutura do Projeto
 
@@ -41,9 +21,9 @@ Este projeto é um sistema de extração, processamento e criação de embedding
 - **persist_table_embeddings.py**: Gerencia a persistência de embeddings no banco de dados, incluindo a definição do modelo de dados para a tabela de embeddings.
 
 ## Funcionalidades Principais
-- Extração de documentos internos e externos do SEI
-- Extração de metadados de documentos
-- Processamento de conteúdo de documentos
-- Criação de embeddings para documentos
-- Pré-processamento de texto e conversão de HTML para Markdown
-- Persistência de embeddings em banco de dados
+- Extração de documentos internos e externos do SEI.
+- Extração de metadados de documentos.
+- Processamento de conteúdo de documentos.
+- Criação de embeddings para documentos.
+- Pré-processamento de texto e conversão de HTML para Markdown.
+- Persistência de embeddings em banco de dados.
