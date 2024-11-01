@@ -1,8 +1,8 @@
-# Projeto de Embedder do Servidor de Soluções de IA do Módulo SEI-IA
+# Projeto de Embedder do Servidor de Soluções de IA do Módulo SEI IA
 Esse projeto não tem funcionalidade alguma sem o [Servidor de Soluções de IA do Módulo SEI IA](https://github.com/anatelgovbr/sei-ia).
 
 ## Descrição
-Este projeto é um sistema de extração, processamento e criação de embeddings para documentos do SEI (Sistema Eletrônico de Informações). Ele é usado pelo Airflow do servidor de Soluções de IA do Módulo SEI-IA.
+Este projeto é um sistema de extração, processamento e criação de embeddings para documentos do SEI (Sistema Eletrônico de Informações). Ele é usado pelo Airflow do servidor de Soluções de IA do Módulo SEI IA.
 
 ## Estrutura do Projeto
 
